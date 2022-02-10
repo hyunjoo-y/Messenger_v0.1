@@ -1,0 +1,4 @@
+solcjs StoreId.sol --bin --abi --optimize -o C:\Users\to123\AndroidStudioProjects\Messenger\app\src\main\java\com\example\messenger
+
+
+web3j generate solidity -b C:\Users\to123\AndroidStudioProjects\Messenger\app\src\main\java\com\example\messenger/StoreId_sol_StoreId.bin -a C:\Users\to123\AndroidStudioProjects\Messenger\app\src\main\java\com\example\messenger/StoreId_sol_StoreId.abi -p C:\Users\to123\AndroidStudioProjects\Messenger\app\src\main\java\com\example\messenger -o C:\Users\to123\AndroidStudioProjects\Messenger\app\src\main\java\com\example\messenger
