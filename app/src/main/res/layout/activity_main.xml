@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:paddingTop="15sp">
+
+                <LinearLayout
+                    android:layout_width="75sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <Button
+                    android:id="@+id/moveLoginButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:paddingTop="8dp"
+                    android:text="Login"
+                    android:textColor="#88673AB7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="30sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <Button
+                    android:id="@+id/moveSingUpButton"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00F4F4F4"
+                    android:paddingTop="8dp"
+                    android:text="Sign Up"
+                    android:textColor="#673AB7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#00FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:text="본인 인증 절차" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:text="휴대폰 번호"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="-없이 번호 입력"
+                        android:inputType="phone"
+                        android:paddingLeft="40dp" />
+
+                    <Button
+                        android:id="@+id/SMScerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:text="인증"
+                        android:textColor="#673AB7"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="375dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#C3BEBE"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="10dp"
+                    android:text="인증번호"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="인증번호 입력"
+                android:inputType="number"
+                android:paddingLeft="40dp" />
+
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#C3BEBE"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="본인 확인 절차이며, 다른 용도로 사용되지 않습니다."
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/signupNextButton"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="인증하기"
+                app:backgroundTint="#D79A6CEC"
+                app:cornerRadius="100dp" />
+
+            <Button
+                android:id="@+id/forgotPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:paddingBottom="20sp"
+                android:text="Forgot Password?"
+                android:textColor="#958B8B"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Software System Lab"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
